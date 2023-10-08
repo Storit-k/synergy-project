@@ -22,7 +22,7 @@ class Main(tk.Frame):
         self.search_img = tk.PhotoImage(file='./img/search.png')
         self.refresh_img = tk.PhotoImage(file='./img/refresh.png')
 
-        # Кнопки
+        # Добавления кнопок
         open_dialog_button = tk.Button(toolbar, background='#7f7f87', bd=0, command=self.open_dialog,
                                        image=self.add_img)
         open_dialog_button.pack(side=tk.LEFT)
@@ -115,6 +115,7 @@ class Child(tk.Toplevel):
         self._init_child()
 
     def _init_child(self):
+        # Насройка окна
         self.title('Добавить')
         self.geometry('400x220')
         self.resizable(False, False)
